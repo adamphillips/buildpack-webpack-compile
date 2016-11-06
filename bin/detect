@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# this pack is valid for apps with a hello.txt in the root
+if [ -f $1/package.json ]; then
+  echo "package.json exists"
+  exit 0
+else
+  exit 1
+fi
